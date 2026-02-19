@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int i,l,k=0,a,n=0;
+    char str[100],s[100],ch;
+    printf("Enter a string:\n");
+    fgets(str,100,stdin);
+    l=strlen(str);
+    for(i=0;i<l;i++)
+    {
+        ch=str[i];
+        a=(int)ch;
+        if(i==(l-1))
+        {
+            n=n+a;
+        }
+        else
+        {
+            n=n+a;
+            n=n*10;
+        }
+    }
+    printf("The integer value is:%d\n",n);
+    return(0);
+}
