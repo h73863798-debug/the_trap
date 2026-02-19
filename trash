@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int i,l,s=0;
+    char str[100];
+    printf("Enter a sentence:\n");
+    scanf("%[^\n]s",str);
+    l=strlen(str);
+    str[l]=' ';
+    for(i=0;i<=l;i++)
+    {
+        if(str[i]==' ')
+        {
+            s=s+1;
+        }
+
+    }
+    printf("The mumber of words are:%d\n",s);
+    return(0);
+}
