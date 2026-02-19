@@ -1,0 +1,35 @@
+#include <stdio.h>
+int cornersum(int r, int c,int a[r][c])
+{
+    int sum;
+    sum=a[0][0]+a[0][c-1]+a[r-1][0]+a[r-1][c-1];
+    return(sum);
+
+}
+int main()
+{
+    int result,r1,c1,i,j;
+    printf("Enter the number of rows and column in the matrix:\n");
+    scanf("%d%d",&r1,&c1);
+    int b[r1][c1];
+    printf("Enter the numbers of the matrix:\n");
+    for(i=0;i<r1;i++)
+    {
+        for(j=0;j<c1;j++)
+        {
+            scanf("%d",&b[i][j]);
+        }
+    }
+    printf("The matrix is:\n");
+    for(i=0;i<r1;i++)
+    {
+        for(j=0;j<c1;j++)
+        {
+            printf("%d ",b[i][j]);
+        }
+        printf("\n");
+    }
+    result=cornersum(r1,c1,b);
+    printf("The Corner Sum is:%d\n",result);
+    return(0);
+}
