@@ -1,0 +1,27 @@
+package ohhh;
+import java.util.*;
+public class nice {
+	public static void main(String[] args) {
+		int h,ovh=0;
+		double hr,s;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number of hours worked & hourly rate:")
+		h=sc.nextInt();
+		hr=sc.nextDouble();
+		if(h<=40)
+		{
+			s=h*hr;
+		}
+		else
+		{
+			ovh=h-40;
+			s=(40*hr)+(ovh*hr*1.5);
+		}
+		System.out.println("Hours Worked:"+h);
+		System.out.println("Overtime:"+ovh);
+		System.out.println("Salary:"+s);
+		// TODO Auto-generated method stub
+
+	}
+
+}
