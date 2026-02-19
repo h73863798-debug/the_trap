@@ -1,0 +1,36 @@
+import java.util.*;
+public class hello
+{
+    public static void main()
+    {
+        int tc;
+        double a;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter total cost:");
+        tc=sc.nextInt();
+        if(tc<=2000)
+        {
+            a=tc-((tc*5)/100);
+            System.out.println("Total Amount:"+a);
+            System.out.println("Gift:Calculator");
+        }
+        else if((tc>2001)&&(tc<=5000))
+        {
+            a=tc-((tc*10)/100);
+            System.out.println("Total Amount:"+a);
+            System.out.println("Gift:School Bag");
+        }
+        else if((tc>5001)&&(tc<=10000))
+        {
+            a=tc-((tc*15)/100);
+            System.out.println("Total Amount:"+a);
+            System.out.println("Gift:Wall Clock");
+        }
+        else 
+        {
+            a=tc-((tc*20)/100);
+            System.out.println("Total Amount:"+a);
+            System.out.println("Gift:Wrist Watch");
+        }
+    }
+    }
