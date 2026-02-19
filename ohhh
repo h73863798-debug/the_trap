@@ -1,0 +1,51 @@
+package yolo;
+import java.util.*;
+public class nice{
+		void number() {
+			int i,n,ch;
+			System.out.println("Enter 1 for Buzz Number and 2 for Composite Number:");
+			ch=sc.nextInt();
+			System.out.println("Enter a number:");
+			n=sc.nextInt();
+			switch(ch)
+			{
+			case 1:
+				if(((n%7)==0)||((n%10)==7))
+				{
+					System.out.println("It is a Buzz Number");
+				}
+				else
+				{
+					System.out.println("It is not a Buzz number");
+				}
+				break;
+			case 2:
+				for(i=2;i<n;i++)
+				{
+					if((n%$i)==0)
+					{
+						k=1;
+						break;
+					}
+				}
+				if(k==1)
+				{
+					System.out.println("It is a Composite Number");
+				}
+				else
+				{
+					System.out.println("It is not a Composite number");
+				}
+				break;
+			default:
+				System.out.println("Wrong Input");
+			}
+		}
+  public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		nice obj=new nice();
+		obj.number();
+	}
+
+}
